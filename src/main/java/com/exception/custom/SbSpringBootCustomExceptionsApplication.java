@@ -8,6 +8,7 @@ public class SbSpringBootCustomExceptionsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SbSpringBootCustomExceptionsApplication.class, args);
+		
 	}
 
 }

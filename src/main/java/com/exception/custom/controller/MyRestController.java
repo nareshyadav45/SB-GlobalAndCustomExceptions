@@ -32,8 +32,8 @@ public class MyRestController {
 	    
 	    return ResponseEntity.status(HttpStatus.ACCEPTED)
 	                         .body("You are allowed to cast your vote.");
-		}catch (Exception e) {
-			return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_GATEWAY);
+		}catch (AgeNotPermittedException ex) {
+			return new ResponseEntity<>(ex.getMessage(),HttpStatus.BAD_GATEWAY);
 			
 		}
 		
